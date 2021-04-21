@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Salwa";
+}
+
+@section css {
+    <link href="@Url.Content("~/css/Salwa.css")" rel="stylesheet" />
+}
+<canvas id="canvas1"></canvas>
+<script src="~/js/script.js"></script>
+<section>
+    <div class="container-salwa">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Ludvig" asp-action="Index">Ludvig</a></li>
+                    <li><a asp-area="" asp-controller="Richard" asp-action="Index">Richard</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <a href="https://www.twitch.tv/sallyra/about" class="social-btn">Twitch</a>
+            <a href="https://github.com/SalwaRaa" class="social-btn">GitHub</a>
+            <a href="https://www.instagram.com/xsallyrax/" class="social-btn">LinkedIn</a>
+            <h1>Welcome to SallyRa's <br /> homepage</h1>
+            <p>Here I will talk about everything from anime <br /> to programming and gamning.<br> Enjoy your stay! </p>
+            <button class="fun" data-toggle="collapse" data-target="#mygif">Click here for a surprise</button>
+            <div id="mygif" class="collapse">
+                <div>
+                    <div class="row text-center">
+                        <div class="col-sm-2 col-md-2">
+                            <img class="gif" src="~/images/gif2.gif" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="dva-pixel">
+    <br />
+    <h1 id="hobbies-title">My Hobbies</h1>
+    <p id="hobbies-para">
+        In my free time I love to play games, such as Overwatch and CS:GO. <br />
+        I recently also found a passion for programming! Check out this pixel manipulation image I created <br />
+        by only using javascript! Pretty cool yeah!
+    </p>
+    <h3 class="title">GG WP!</h3>
+</section>
